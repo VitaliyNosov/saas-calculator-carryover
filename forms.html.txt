@@ -1,0 +1,70 @@
+euro one calculator form:
+
+Shortcode: [contact-form-7 id="6337" title="euro one calculator form"]
+
+<div id="email-one" class="block-form-order">
+<div class="form-body-order">
+<input type="text" placeholder="ваша почта: ">
+<div class="button-order">
+<input class=" btn btn-large btn-block  button-order-blue  btn-custom-color" type="submit" value="Отправить">
+</div>
+</div>
+</div>
+
+euro two calculator form:
+
+Shotcode: [contact-form-7 id="6338" title="Untitled"]
+
+<div class="block-form-order">
+<div class="form-body-order">
+<div class="form-summ-block-two">
+<input type="text" id="outputEuroOne">
+<input type="text" id="outputEuroTwo">
+<input type="text" id="outputEuroThree">
+<input type="text" id="summ2">
+</div>
+<input type="text" placeholder="ваша почта: ">
+<input type="text" placeholder="ваш телефон: ">                    
+<div class="button-order">
+<input class=" btn btn-large btn-block  button-order-blue  btn-custom-color" type="submit" value="Отправить">
+</div>
+</div>
+</div>
+
+ukr one calculator form
+
+Shortcode: [contact-form-7 id="6339" title="Untitled"]
+
+<div id="email-one" class="block-form-order">
+<div class="form-body-order">
+<input type="text" placeholder="ваша почта: ">
+<div class="button-order">
+<input class=" btn btn-large btn-block  button-order-blue  btn-custom-color" type="submit" value="Отправить">
+</div>
+</div>
+</div>
+
+
+ukr two calculator form
+
+Shortcode: [contact-form-7 id="6340" title="ukr two calculator form"]
+
+
+<div class="block-form-order">
+<div class="form-body-order">
+<div class="form-summ-block-one">
+<input type="text" id="outputUkrOne">
+<input type="text" id="outputUkrTwo">
+<input type="text" id="outputUkrThree">
+<input type="text" id="summ1">
+</div>
+<input type="text" placeholder="ваша почта: ">
+<input type="text" placeholder="ваш телефон: ">
+<div class="button-order">
+<input class=" btn btn-large btn-block  button-order-blue  btn-custom-color" type="submit" value="Отправить">
+</div>
+</div>
+</div>
+
+
+

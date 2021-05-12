@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <div class="calculator-wrapper">
+
+    <div class="button-block-header">
+      <li href="#" id="button-click" class="my-btn btn btn-large btn-block  button-order-blue primary btn-custom-color">Калькулятор серверів</li>
+    </div>
+  
+    <div id="content-block" class="form-wrapper">
+  
+      <section class="section-form-body">
+  
+        <header class="header-block">
+          <h1><strong>Розрахувати вартість</strong></h1>
+        </header>
+  
+        <div class="form-body form-body-one">
+          <div class="select-body">
+            <select name="" id="servers-select">
+              <option value="">Вибрати сервер</option>
+              <option value="europe">Європа</option>
+              <option value="ukraine">Україна</option>
+            </select>
+          </div>
+        </div>
+  
+        <!-- Украина -->
+  
+        <div id="ukraine" class="ukraine-content servers-wrapper">
+  
+          <div id="europe-header" class="form-body form-body-two">
+            <div class="country">
+              <h4>Україна:</h4>
+            </div>
+            <hr>
+  
+            <!-- Табы -->
+  
+            <div id="tabs-1" class="tabs">
+              <input type="radio" name="tab-btn-1" id="tab-btn-1" value="" checked><br>
+              <label for="tab-btn-1">Сервер: <strong>KVM-50</strong></label><br>
+              <input type="radio" name="tab-btn-1" id="tab-btn-2" value=""><br>
+              <label for="tab-btn-2">Cервер: <strong>KVM-75</strong></label><br>
+              <input type="radio" name="tab-btn-1" id="tab-btn-3" value=""><br>
+              <label for="tab-btn-3">Сервер: <strong>KVM-150</strong></label><br>
+              <input type="radio" name="tab-btn-1" id="tab-btn-4" value=""><br>
+              <label for="tab-btn-4">Сервер: <strong>KVM-300</strong></label>
+  
+              <div id="content-1">
+                <p><strong>RAM GB</strong> (оперативна пам'ять)<strong> :2</strong></p>
+                <p><strong>Processor: Intel Xeon (2.3 GHz)</strong> (процесор, кількість ядер)<strong> :2</strong></p>
+                <p><strong>Storage: GB SSD</strong> (обсяг диска)<strong> :50</strong></p>
+                <p><strong>Max Users</strong> ( максимальну кількість користувачів)<strong> :3</strong></p>
+                <label for="" class="input-server-ukr"><strong>Дізнатися ціни</strong><input class="ukr-radio" type="radio">
+                </label>
+              </div>
+              <div id="content-2">
+                <p><strong>RAM GB</strong> (оперативна пам'ять)<strong> :4</strong></p>
+                <p><strong>Processor: Intel Xeon (2.3 GHz)</strong> (процесор, кількість ядер)<strong> :3</strong></p>
+                <p><strong>Storage: GB SSD</strong> (обсяг диска)<strong> :75</strong></p>
+                <p><strong>Max Users</strong> ( максимальну кількість користувачів)<strong> :5</strong></p>
+                <label for="" class="input-server-ukr"><strong>Дізнатися ціни</strong><input class="ukr-radio" type="radio">
+                </label>
+              </div>
+              <div id="content-3">
+                <p><strong>RAM GB</strong> (оперативна пам'ять)<strong> :6</strong></p>
+                <p><strong>Processor: Intel Xeon (2.3 GHz)</strong> (процесор, кількість ядер)<strong> :4</strong></p>
+                <p><strong>Storage: GB SSD</strong> (обсяг диска)<strong> :150</strong></p>
+                <p><strong>Max Users</strong> ( максимальну кількість користувачів)<strong> :10</strong></p>
+                <label for="" class="input-server-ukr"><strong>Дізнатися ціни</strong><input class="ukr-radio" type="radio">
+                </label>
+              </div>
+              <div id="content-4">
+                <p><strong>RAM GB</strong> (оперативна пам'ять)<strong> :8</strong></p>
+                <p><strong>Processor: Intel Xeon (2.3 GHz)</strong> (процесор, кількість ядер)<strong> :4</strong></p>
+                <p><strong>Storage: GB SSD</strong> (обсяг диска)<strong> :300</strong></p>
+                <p><strong>Max Users</strong> ( максимальну кількість користувачів)<strong> :20</strong></p>
+                <label for="" class="input-server-ukr"><strong>Дізнатися ціни</strong><input class="ukr-radio" type="radio">
+                </label>
+              </div>
+            </div>
+  
+            <!-- Табы -->
+  
+          </div>
+  
+          <!-- Ціни -->
+  
+          <div class="form-price-ukr">
+            <div class="country">
+              <h5>Ціни:</h5>
+            </div>
+            <hr>
+  
+            <div class="radio-block-wrapper">
+              <div class="radio-block">
+                <label>
+                  <input id="checkbox_check" name="ukr" data-check="18" class="price-ukr" type="radio" name="price" value="KVM-50">KVM-50: <strong>18 euro</strong></label>
+              </div>
+              <div class="radio-block">
+                <label>
+                  <input id="checkbox_check" name="ukr" data-check="28.8" class="price-ukr" type="radio" name="price" value="KVM-75">KVM-75: <strong>28.8 euro</strong></label>
+              </div>
+  
+              <div class="radio-block">
+                <label>
+                  <input id="checkbox_check" name="ukr" data-check="44.5" class="price-ukr" type="radio" name="price" value="KVM-150">KVM-150: <strong>44.4 euro</strong></label>
+              </div>
+              <div class="radio-block">
+                <label>
+                  <input id="checkbox_check" name="ukr" data-check="75.6" class="price-ukr" type="radio" name="price" value="KVM-300">KVM-300: <strong>75.6 euro</strong></label>
+              </div>
+            </div>
+  
+          </div>
+  
+          <!-- Операционная система -->
+  
+          <div class="form-support-system-ukr">
+            <div class="country">
+              <h5>Вибрати операційну систему:</h5>
+            </div>
+            <hr>
+            <div id="system-ukr-block" class="system-block ukr-check">
+              <div class="system-block-content">
+                <label>
+                  <br>
+                  <input id="checkbox_check" data-check="0" class="suport-system-ukr ukr" type="checkbox" name="support-system" value="Lunux">
+                  <br>
+                  <strong>Linux: </strong>
+                  <br>
+                </label>
+                  <br>
+                <label>
+                  <br>
+                  <input id="checkbox_check" data-check="19.08" class="suport-system-ukr ukr" type="checkbox" name="support-system" value="Windows">
+                  <br>
+                  <strong>Windows: </strong>
+                  <br>
+                </label>
+              </div>
+              <div class="system-block-content">
+                <label> 
+                  <br>
+                  <input data-check="37.83" class="suport-system-ukr" type="checkbox" name="support-system" value="Windows KMV-50">
+                  <br>
+                  <strong>Windows KMV-50 </strong>(remout)
+                  <br>
+                </label>
+                  <br>
+                <label>
+                  <br>
+                  <input data-check="50.33" class="suport-system-ukr" type="checkbox" name="support-system" value="Windows KVM-75">
+                  <br>
+                  <strong>Windows KVM-75 </strong>(remout)
+                  <br>
+                </label>
+              </div>
+              <div class="system-block-content">
+                <label>
+                  <br>
+                  <input data-check="81.58" class="suport-system-ukr" type="checkbox" name="support-system" value="Windows KVM-150">
+                  <br>
+                  <strong>Windows KVM-150 </strong>(remout)
+                  <br>
+                </label>
+                <br>
+                <label>
+                  <br>
+                  <input data-check="144.08" class="suport-system-ukr" type="checkbox" name="support-system" value="Windows KVM-300">
+                  <br>
+                  <strong>Windows KVM-300 </strong>(remout)
+                  <br>
+                </label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="form-software-about-ukr">
+            <div class="country">
+              <h5>Ліцензія Spla:</h5>
+            </div>
+            <hr>
+            <div class="group-ukr ukr-check">
+              <div class="group-ukr-content">
+                <label for="#">
+                  <br>
+                  <input data-check="20.16" class="software-about-ukr" type="checkbox" name="server" value="LicenceSpla KMV-50">
+                  <br>
+                  <strong>LicenceSpla KMV-50</strong></label>
+                  <br>
+                <label for="#">
+                  <br>
+                  <input data-check="36.72" class="software-about-ukr" type="checkbox" name="server" value="LicenceSpla KVM-75">
+                  <br>
+                  <strong>LicenceSpla KVM-75</strong>
+                  <br>
+                </label>
+              </div>
+              <div class="group-ukr-content">
+                <label for="#">
+                  <br>
+                  <input data-check="58.08" class="software-about-ukr" type="checkbox" name="server" value="LicenceSpla KMV-150">
+                  <br>
+                  <strong>LicenceSpla KMV-150</strong></label>
+                  <br>
+                <label for="#">
+                  <br>
+                  <input data-check="173.76" class="software-about-ukr" type="checkbox" name="server" value="LicenceSpla KVM-300">
+                  <br>
+                  <strong>LicenceSpla KVM-300</strong>
+                  <br>
+                </label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="total-amount-ukr">
+  
+            <hr>
+  
+            <div class="order-header">
+              <h3>Відправити мені на Email</h3>
+            </div>
+  
+            <!-- form -->
+
+            <!-- шорткод -->
+              
+      [contact-form-7 id="6345" title="calcualtor form email"]
+
+            <!-- шорткод -->
+  
+  
+            <!-- form -->
+  
+            <div class="order-header">
+              <h3>Відправити замовлення</h3>
+            </div>
+  
+            <!-- Вывод суммы -->
+  
+            <div class="country">
+              <h5>Ваше замовлення:</h5>
+            </div>
+
+                    
+  
+            <!-- form -->
+
+            <!-- шорткод -->
+
+       [contact-form-7 id="6337" title="ukr two calculator form"]
+
+            <!-- шорткод -->
+  
+  
+            <!-- form -->
+  
+          </div>
+  
+        </div>
+
+        <!-- Украина -->
+  
+        <!-- Европа -->
+  
+        <div id="europe" class="europe-content servers-wrapper">
+  
+          <div id="europe-header" class="form-body form-body-two">
+            <div class="country">
+              <h4><strong>Європа:</strong></h4>
+            </div>
+            <hr>
+  
+            <!-- Табы -->
+  
+            <div id="tabs-2" class="tabs">
+              <input type="radio" name="tab-btn-2" id="tab-btn-5" value="" checked><br>
+              <label for="tab-btn-5">Сервер: <strong>B2-7</strong></label><br>
+              <input type="radio" name="tab-btn-2" id="tab-btn-6" value=""><br>
+              <label for="tab-btn-6">Cервер: <strong>B2-15</strong></label><br>
+              <input type="radio" name="tab-btn-2" id="tab-btn-7" value=""><br>
+              <label for="tab-btn-7">Сервер: <strong>B2-30</strong></label><br>
+              <input type="radio" name="tab-btn-2" id="tab-btn-8" value=""><br>
+              <label for="tab-btn-8">Сервер: <strong>B2-60</strong></label>
+  
+              <div id="content-5">
+                <p><strong>RAM GB</strong> (оперативна пам'ять)<strong> :7</strong></p>
+                <p><strong>Processor: vCores (2.3 GHz)</strong> (процесор, кількість ядер)<strong> :2</strong></p>
+                <p><strong>Storage: GB SSD</strong> (обсяг диска)<strong> :50</strong></p>
+                <p><strong>Max Users</strong> ( максимальну кількість користувачів)<strong> :5</strong></p>
+                <label for="" class="input-server-eur"><strong>Дізнатися ціни</strong><input class="ukr-radio" type="radio">
+                </label>
+              </div>
+              <div id="content-6">
+                <p><strong>RAM GB</strong> (оперативна пам'ять)<strong> :15</strong></p>
+                <p><strong>Processor: vCores (2.3 GHz)</strong> (процесор, кількість ядер)<strong> :4</strong></p>
+                <p><strong>Storage: GB SSD</strong> (обсяг диска)<strong> :100</strong></p>
+                <p><strong>Max Users</strong> ( максимальну кількість користувачів)<strong> :15</strong></p>
+                <label for="" class="input-server-eur"><strong>Дізнатися ціни</strong><input class="ukr-radio" type="radio">
+                </label>
+              </div>
+              <div id="content-7">
+                <p><strong>RAM GB</strong> (оперативна пам'ять)<strong> :30</strong></p>
+                <p><strong>Processor: vCores (2.3 GHz)</strong> (процесор, кількість ядер)<strong> :8</strong></p>
+                <p><strong>Storage: GB SSD</strong> (обсяг диска)<strong> :200</strong></p>
+                <p><strong>Max Users</strong> ( максимальну кількість користувачів)<strong> :25</strong></p>
+                <label for="" class="input-server-eur"><strong>Дізнатися ціни</strong><input class="ukr-radio" type="radio">
+                </label>
+              </div>
+              <div id="content-8">
+                <p><strong>RAM GB</strong> (оперативна пам'ять)<strong> :60</strong></p>
+                <p><strong>Processor: vCores (2.3 GHz)</strong> (процесор, кількість ядер)<strong> :8</strong></p>
+                <p><strong>Storage: GB SSD</strong> (обсяг диска)<strong> :400</strong></p>
+                <p><strong>Max Users</strong> ( максимальну кількість користувачів)<strong> :50</strong></p>
+                <label for="" class="input-server-eur"><strong>Дізнатися ціни</strong><input class="ukr-radio" type="radio">
+                </label>
+              </div>
+            </div>
+  
+            <!-- Табы -->
+  
+          </div>
+  
+          <div class="form-price-eur">
+            <div class="country">
+              <h5>Ціни:</h5>
+            </div>
+            <hr>
+  
+            <div class="radio-block-wrapper">
+              <div class="radio">
+                <label>
+                  <input name="euro" data-check="26.4" class="price-eur" type="radio" name="price" value="b2-7">B2-7: <strong>26.4 euro</strong></label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input name="euro" data-check="50.4" class="price-eur" type="radio" name="price" value="b2-15">B2-15: <strong>50.4 euro</strong></label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input name="euro" data-check="102" class="price-eur" type="radio" name="price" value="b2-30">B2-30: <strong>102 euro</strong></label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input name="euro" data-check="198" class="price-eur" type="radio" name="price" value="b2-60">B2-60: <strong>198 euro</strong></label>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="form-support-system-eur">
+            <div class="country">
+              <h5>Вибрати операційну систему:</h5>
+            </div>
+            <hr>
+            <div id="system-eur-block" class="system-block euro-check">
+              <div class="system-block-content-two">
+                <label>
+                  <input data-check="0" class="suport-system-eur" type="checkbox" name="support-system" value="Linux:">
+                  <br>
+                  <strong>Linux: </strong>
+                  <br>
+                </label>
+                  <br>
+                <label>
+                  <br>
+                  <input data-check="19.08" class="suport-system-eur" type="checkbox" name="support-system" value="Windows:">
+                  <br>
+                  <strong>Windows: </strong>
+                  <br>
+                </label>
+                  <br>
+              </div>
+              <div class="system-block-content-two">
+                <label>
+                  <input data-check="61.25" class="suport-system-eur" type="checkbox" name="support-system" value="Windows B2-7(remout)">
+                  <br>
+                  <strong>Windows B2-7 </strong>(remout)
+                  <br>
+                </label>
+                  <br>
+                <label>
+                  <input data-check="123.75" class="suport-system-eur" type="checkbox" name="support-system" value="Windows B2-15(remout)">
+                  <br>
+                  <strong>Windows B2-15 </strong>(remout)
+                  <br>
+                </label>
+                <br>
+              </div>
+              <div class="system-block-content-two">
+                <label>
+                  <input data-check="186.25" class="suport-system-eur" type="checkbox" name="support-system" value="Windows B2-30(remout)">
+                  <br>
+                  <strong>Windows B2-30 </strong>(remout)
+                  <br>
+                </label>
+                  <br>
+                <label>
+                  <input data-check="342.50" class="suport-system-eur" type="checkbox" name="support-system" value="Windows B2-60(remout)">
+                  <br>
+                  <strong>Windows B2-60 </strong>(remout)
+                  <br>
+                </label>
+                <br>
+              </div>
+            </div>
+          </div>
+  
+          <div class="form-software-about-eur">
+            <div class="country">
+              <h5>Ліцензія Spla:</h5>
+            </div>
+            <hr>
+            <div class="group-eur euro-check">
+              <div class="group-eur-content">
+                <label for="#">
+                  <br>
+                  <input data-check="36.72" class="software-about-eur" type="checkbox" name="server" value="LicenceSpla B2-7">
+                  <br>
+                  <strong>LicenceSpla B2-7</strong></label>
+                  <br>
+                <label for="#">
+                  <br>
+                  <input data-check="81.36" class="software-about-eur" type="checkbox" name="server" value="LicenceSpla B2-15">
+                  <br>
+                  <strong>LicenceSpla B2-15</strong>
+                  <br>
+                </label>
+              </div>
+              <div class="group-eur-content">
+                <label for="#">
+                  <br>
+                  <input data-check="121.44" class="software-about-eur" type="checkbox" name="server" value="LicenceSpla B2-30">
+                  <br>
+                  <strong>LicenceSpla B2-30</strong></label>
+                  <br>
+                <label for="#">
+                  <br>
+                  <input data-check="214.56" class="software-about-eur" type="checkbox" name="server" value="LicenceSpla B2-60">
+                  <br>
+                  <strong>LicenceSpla B2-60</strong>
+                  <br>
+                </label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="total-amount-eur">
+  
+            <hr>
+  
+            <div class="order-header">
+              <h3>Відправити мені на Email</h3>
+            </div>
+  
+            <!-- form -->
+
+            <!-- шорткод -->
+  
+            [contact-form-7 id="6345" title="calcualtor form email"]
+
+            <!-- шорткод -->
+  
+  
+            <!-- form -->
+  
+            <div class="order-header">
+              <h3>Відправити замовлення</h3>
+            </div>
+  
+            <!-- Вывод суммы -->
+  
+            <div class="country">
+              <h5>Ваше замовлення:</h5>
+            </div>
+  
+            <!-- form -->
+
+            <!-- шорткод -->
+
+            [contact-form-7 id="6341" title="euro two calculator form"]
+
+            <!-- шорткод -->
+
+  
+            <!-- form -->
+  
+          </div>
+  
+        </div>
+  
+    </div>
+  
+    <!-- Европа -->
+  
+    </section>
+  
+  </div>
+  
+  </div>
+
+
+</body>
+</html>
