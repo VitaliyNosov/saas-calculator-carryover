@@ -178,7 +178,7 @@ jQuery(function($){
 	
 	$('.radio-block input').on('click', function() {
 		// $('#outputUkrOne').text('Cервер: ' + $('.radio-block input:checked').val());
-		$('#outputUkrOne').val('Cервер: ' + $('.radio-block input:checked').val());
+		$('#outputUkrOne').val( $('.radio-block input:checked').val());
 		
 	});
 	
@@ -186,20 +186,20 @@ jQuery(function($){
 	
 	$('.system-block-content input').on('click', function() {
 		// $('#outputUkrTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
-		$('#outputUkrTwo').val('Cистема: ' + $('.system-block-content input:checked').val() );
+		$('#outputUkrTwo').val( $('.system-block-content input:checked').val() );
 	});
 	
 	// Значения третего ряда checkbox
 	
 	$('.group-ukr-content input').on('click', function() {
 		// $('#outputUkrThree').text('Лицензия: ' + $('.group-ukr-content input:checked').val() );
-		$('#outputUkrThree').val('Лицензия: ' + $('.group-ukr-content input:checked').val() );
+		$('#outputUkrThree').val( $('.group-ukr-content input:checked').val() );
 	});
 	
 	
 		// Переменные с нуливыми значениями	
 		
-		var ukr=0, ukrInput=0, check1=0, skidka = 0;	
+		var ukr=0, ukrInput=0, check1=0, skidka=0;	
 		
 		// Обработка поля с radio input 
 	
@@ -232,7 +232,7 @@ jQuery(function($){
 		function summ1(){
 			ukr = Number(ukr);
 			ukrInput = Number(check1);
-            $("#summ1").val(ukr+ukrInput - (skidka / 100 * (ukr+ukrInput)) + ' Euro' );
+            $("#summ1").val( (ukr+ukrInput).toFixed(10) - (skidka / 100 * (ukr+ukrInput)) + ' Euro' );
 		};
 		summ1();
 	
@@ -244,7 +244,7 @@ jQuery(function($){
 	
 	$('.radio input').on('click', function() {
 		// $('#outputEuroOne').text('Сервер: ' + $('.radio input:checked').val());
-		$('#outputEuroOne').val('Сервер: ' + $('.radio input:checked').val());
+		$('#outputEuroOne').val( $('.radio input:checked').val());
 		
 	
 	});
@@ -253,20 +253,20 @@ jQuery(function($){
 	
 	$('.system-block-content-two input').on('click', function() {
 		// $('#outputEuroTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
-		$('#outputEuroTwo').val('Cистема: ' + $('.system-block-content-two input:checked').val() );
+		$('#outputEuroTwo').val( $('.system-block-content-two input:checked').val() );
 	});
 	
 	// Значения третего ряда checkbox
 	
 	$('.group-eur-content input').on('click', function() {
 		// $('#outputEuroThree').text('Лицензия: ' + $('.group-eur-content input:checked').val() );
-		$('#outputEuroThree').val('Лицензия: ' + $('.group-eur-content input:checked').val() );
+		$('#outputEuroThree').val( $('.group-eur-content input:checked').val() );
 	});
 	
 	
 		// Переменные с нуливыми значениями	
 		
-		var euro=0, euroInput=0, check2=0, skidka = 0;	
+		var euro=0, euroInput=0, check2=0, skidka=0;	
 		
 		// Обработка поля с radio input 
 		
@@ -300,7 +300,7 @@ jQuery(function($){
 		function summ2(){
 			euro = Number(euro);
 			euroInput = Number(check2);
-            $("#summ2").val(euro + euroInput - (skidka / 100 * (euro + euroInput)) + ' Euro' );
+            $("#summ2").val( (euro+euroInput).toFixed(10) - (skidka / 100 * (euro+euroInput).toFixed(10)) + ' Euro' );
 		};
 		summ2();
 
