@@ -504,14 +504,14 @@ jQuery(function($){
 	
 	$('.system-block-content input').on('click', function() {
 		// $('#outputUkrTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
-		$('#outputUkrTwo').val( $('.system-block-content input:checked').val() );
+		$('#outputUkrTwo').val( $('.system-block-content input:checked').val());
 	});
 	
 	// Значения третего ряда checkbox
 	
 	$('.group-ukr-content input').on('click', function() {
 		// $('#outputUkrThree').text('Лицензия: ' + $('.group-ukr-content input:checked').val() );
-		$('#outputUkrThree').val( $('.group-ukr-content input:checked').val() );
+		$('#outputUkrThree').val( $('.group-ukr-content input:checked').val());
 	});
 	
 	
@@ -528,33 +528,36 @@ jQuery(function($){
 			} else {
 				ukr = $(this).data('check');
 			}
-			summ1();
+			summOne();
 		});
 			
 		// Обработка полей с checkbox input 
 		
 		$('.ukr-check').on('change', function(){
 			check1 = 0;
-			$('input:checkbox:checked').each(function(){
+			$('.ukr-check').each(function(){
 				if($(this).prop("checked")){
                 check1 = Number(check1) + Number( $(this).data('check') );
 				}
 			});
-			summ1();
+			summOne();
 		});
 		
+        // input:checkbox:checked
 		
 		// Обработка и вывод суммы
 	
 		
-		function summ1(){
+		function summOne(){
+            skidka = Number(skidka);
 			ukr = Number(ukr);
 			ukrInput = Number(check1);
-            $("#summ1").val( (ukr+ukrInput).toFixed(10) - (skidka / 100 * (ukr+ukrInput)) + ' Euro' );
+            $("#summ1").val( (ukr+ukrInput).toFixed(10) - (skidka / 100 * (ukr+ukrInput) ) + ' Euro' );
 		};
-		summ1();
-	
-	
+		summOne();
+
+
+
 // Европа:
 	
 	
@@ -571,20 +574,20 @@ jQuery(function($){
 	
 	$('.system-block-content-two input').on('click', function() {
 		// $('#outputEuroTwo').text('Операционная система: ' + $('.system-block-content input:checked').val() );
-		$('#outputEuroTwo').val( $('.system-block-content-two input:checked').val() );
+		$('#outputEuroTwo').val( $('.system-block-content-two input:checked').val());
 	});
 	
 	// Значения третего ряда checkbox
 	
 	$('.group-eur-content input').on('click', function() {
 		// $('#outputEuroThree').text('Лицензия: ' + $('.group-eur-content input:checked').val() );
-		$('#outputEuroThree').val( $('.group-eur-content input:checked').val() );
+		$('#outputEuroThree').val( $('.group-eur-content input:checked').val());
 	});
 	
 	
 		// Переменные с нуливыми значениями	
 		
-		var euro=0, euroInput=0, check2=0, skidka=0;	
+		var euro=0, euroInput=0, check2=0, skid=0;	
 		
 		// Обработка поля с radio input 
 		
@@ -594,33 +597,34 @@ jQuery(function($){
 			} else {
 				euro = $(this).data('check');
 			}
-			summ2();
+			summTwo();
 		});
 			
 		// Обработка полей с checkbox input 
 		
 		$('.euro-check').on('change', function(){
 			check2 = 0;
-			$('input:checkbox:checked').each(function(){
+			$('.euro-check').each(function(){
 				if($(this).prop("checked")){
                 check2 = Number(check2) + Number( $(this).data('check') );
 				}
 			});
-			summ2();
+			summTwo();
 		});
 		
+        // input:checkbox:checked
 		
 		// Обработка и вывод суммы
 	
 		
-	
 		
-		function summ2(){
+		function summTwo(){
+            skid = Number(skid);
 			euro = Number(euro);
 			euroInput = Number(check2);
-            $("#summ2").val( (euro+euroInput).toFixed(10) - (skidka / 100 * (euro+euroInput).toFixed(10)) + ' Euro' );
+            $("#summ2").val( (euro+euroInput).toFixed(10) - (skid / 100 * (euro+euroInput) ) + ' Euro' );
 		};
-		summ2();
+		summTwo();
 
 
 // Логика калькулятора

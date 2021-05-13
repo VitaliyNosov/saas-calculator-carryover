@@ -1287,7 +1287,7 @@ footer{
   width: 100%;
   margin: 0 auto;
   background-color: #fff;
-  /* display: none; */
+  display: none;
 }
 
 .header-block {
@@ -1783,7 +1783,7 @@ label {
 }
 
 
-/* .form-price-ukr {
+.form-price-ukr {
   display: none;
 }
 
@@ -1826,7 +1826,7 @@ label {
 
 .ukraine-content {
   display: none;
-} */
+}
 
 
 /*# sourceMappingURL=style.css.map */
