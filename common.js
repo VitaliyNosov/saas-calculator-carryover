@@ -172,7 +172,7 @@ jQuery(function($){
 // Логика калькулятора
 
 
-	// Украина:
+// Украина:
 	
 	// Значения radio кнопок
 	
@@ -215,7 +215,7 @@ jQuery(function($){
 			
 		// Обработка полей с checkbox input 
 		
-		$('.ukr-check').on('change', function(){
+		$('#u').on('change', function(){
 			check1 = 0;
 			$('input:checkbox:checked').each(function(){
 				if($(this).prop("checked")){
@@ -230,6 +230,7 @@ jQuery(function($){
 	
 		
 		function summ1(){
+            skidka = Number(skidka);
 			ukr = Number(ukr);
 			ukrInput = Number(check1);
             $("#summ1").val( (ukr+ukrInput).toFixed(10) - (skidka / 100 * (ukr+ukrInput)) + ' Euro' );
@@ -237,7 +238,7 @@ jQuery(function($){
 		summ1();
 	
 	
-	// Европа:
+// Европа:
 	
 	
 	// Значения radio кнопок
@@ -266,7 +267,7 @@ jQuery(function($){
 	
 		// Переменные с нуливыми значениями	
 		
-		var euro=0, euroInput=0, check2=0, skidka=0;	
+		var euro=0, euroInput=0, check2=0, skid=0;	
 		
 		// Обработка поля с radio input 
 		
@@ -298,9 +299,10 @@ jQuery(function($){
 	
 		
 		function summ2(){
+            skid = Number(skid);
 			euro = Number(euro);
 			euroInput = Number(check2);
-            $("#summ2").val( (euro+euroInput).toFixed(10) - (skidka / 100 * (euro+euroInput).toFixed(10)) + ' Euro' );
+            $("#summ2").val( (euro+euroInput).toFixed(10) - (skid / 100 * (euro+euroInput)) + ' Euro' );
 		};
 		summ2();
 
